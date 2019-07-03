@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:id="@+id/grp_mask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue"
+            android:padding="32dp">
+
+            <TextView
+                android:id="@+id/txt_today_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_today"
+                android:alpha="0.8"
+                android:text="02/07/2019"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_short_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_today_date"
+                android:text="Fog"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_short_weather"
+                android:text="scattered clouds"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/txt_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="6°"
+                android:textColor="@color/white"
+                android:textSize="54sp" />
+
+            <ImageView
+                android:id="@+id/img_weather"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:alpha="0.3"
+                android:src="@drawable/ic_wi_fog"
+                android:tint="@color/white" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</layout>
